@@ -8,6 +8,7 @@
 	"difficulty": "beginner",
 	"syntax": "python",
 	"duration" : 1,
-    "projectType": "project",
-	"description" : "Use Flask to create a machine learning web application."
+    	"projectType": "project",
+	"description" : "Use Flask to create a machine learning web application.",
+	"gitpod": true
 }
