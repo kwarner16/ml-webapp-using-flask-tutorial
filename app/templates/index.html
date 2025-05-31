@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Toxic Comment Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Toxic Comment Detector</h1>
+        <form method="POST">
+            <textarea name="comment" placeholder="Paste a comment..." required>{{ comment }}</textarea><br>
+            <button type="submit">Analyze</button>
+        </form>
+
+        {% if prediction %}
+            <h2 class="{% if prediction == '🔥 TOXIC' %}toxic{% else %}safe{% endif %}">
+                Prediction: {{ prediction }}
+            </h2>
+        {% endif %}
+    </div>
+</body>
+</html>
